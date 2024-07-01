@@ -1,7 +1,7 @@
 
 ![logo](https://raw.githubusercontent.com/mr-sami-x/SQLi/main/Picsart_23-07-21_02-11-16-006.png)
 
-# EX - SQLi
+# EX - SQLi Linux
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/release)
