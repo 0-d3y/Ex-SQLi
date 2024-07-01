@@ -89,6 +89,7 @@ Make sure to install the required libraries using pip:
 pkg update && pkg upgrade
 pkg install python git
 pip install aiohttp pyfiglet
+pip install pyarmor
 pkg install sqlmap
 ```
 
