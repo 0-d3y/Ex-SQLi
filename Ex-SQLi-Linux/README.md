@@ -5,8 +5,8 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/release)
-[![GitHub issues](https://img.shields.io/github/issues/mr-sami-x/image_ai)](https://github.com/mr-sami-x/image_ai/issues)
-[![GitHub stars](https://img.shields.io/github/stars/mr-sami-x/image_ai)](https://github.com/mr-sami-x/image_ai/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/0-d3y/Ex-SQLi)](https://github.com/0-d3y/Ex-SQLi/issues)
+[![GitHub stars](https://img.shields.io/github/stars/0-d3y/Ex-SQLi)](https://github.com/0-d3y/Ex-SQLi/stargazers)
 
 
 ## Overview
