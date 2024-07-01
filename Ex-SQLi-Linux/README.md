@@ -29,12 +29,15 @@ python main.py
 ```
 
 ## You will see the following menu for selection:
-`
+```
 [1] EXPLOIT SQLI
+
 [2] SCANNING SQL INJECTION
+
 [3] ABOUT DEVELOPER
+
 [4] ABOUT SOFTWARE
-`
+```
 
 
 ## SQL Injection Scanning
@@ -62,7 +65,9 @@ Name : SaMi
 From : Yemen
 
 Telegram: https://t.me/i_0d3y
+
 GitHub: https://github.com/0-d3y
+
 Website: https://sami-soft-ye.blogspot.com
 
 
