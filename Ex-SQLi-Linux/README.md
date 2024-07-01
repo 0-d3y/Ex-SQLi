@@ -86,6 +86,7 @@ sqlmap_path = "path/to/sqlmap.py"
 ## Installing Required Libraries
 Make sure to install the required libraries using pip:
 ```
+pip install pyarmor
 pip install aiohttp pyfiglet
 ```
 
