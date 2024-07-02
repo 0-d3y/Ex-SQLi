@@ -106,7 +106,7 @@ def main():
 {RED}[{RESET}1{RED}] {GREEN}EXPLOIT SQLI       {RED}[{RESET}2{RED}] {GREEN} SCANNING SQLi
 {RED}[{RESET}3{RED}] {GREEN}ABOUT DEVELOPER    {RED}[{RESET}4{RED}] {GREEN} ABOUT SOFTWARE
         """)
-        sqli = input(f"\n{RED}╔═══{GREEN}[ {RESET}root{GREEN}@{RESET}SaMi_ye {GREEN}] \n{RED}╚══>>>   \033[32m")
+        sqli = input(f"\n{RED}╔═══{GREEN}[ {RESET}root{GREEN}@{RESET}Ex-SQLi ~ V0.1 {GREEN}] \n{RED}╚══>>>   \033[32m")
         
         if sqli == '1':
             site = input(f"\n{RED}╔═══{GREEN}[ {RESET}ENTER URL{GREEN}] \n{RED}╚══>>>   \033[32m")
@@ -160,6 +160,7 @@ def login():
         if 'ok' in sami_ch:
             main()
     except FileNotFoundError:
+        webbrowser.open('https://t.me/i_0d3y')
         with open('ch.txt', 'w', encoding='utf-8') as file:
             file.write('ok')
         main()
